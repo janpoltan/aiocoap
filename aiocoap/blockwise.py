@@ -59,6 +59,9 @@ class Block1Spool:
 
         if req.opt.block1 is None:
             return req
+        
+        # Print the block1
+        print("Block1: ", req.opt.block1)
 
         block_key = _extract_block_key(req)
 
